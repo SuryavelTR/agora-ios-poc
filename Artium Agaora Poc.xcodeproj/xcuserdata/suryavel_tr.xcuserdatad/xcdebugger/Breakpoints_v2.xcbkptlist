@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "51389F99-BDA5-4C45-99E7-017E18C9362F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1BD3C5B-D9F6-4FA9-9C7B-6F62F2164604"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Artium Agaora Poc/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "fetchChannelInfo(onSuccess:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1BD3C5B-D9F6-4FA9-9C7B-6F62F2164604 - 1b616968f438dadb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Artium_Agaora_Poc.ChannelInfo, Alamofire.AFError&gt;) -&gt; () in Artium_Agaora_Poc.ViewController.fetchChannelInfo(onSuccess: (Artium_Agaora_Poc.ChannelInfo) -&gt; ()) -&gt; ()"
+                  moduleName = "Artium Agaora Poc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suryavel_tr/Documents/Suryavel/Artium/POC/iOS/Artium%20Agaora%20Poc/Artium%20Agaora%20Poc/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "E1BD3C5B-D9F6-4FA9-9C7B-6F62F2164604 - 1b616968f438dadb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Artium_Agaora_Poc.ChannelInfo, Alamofire.AFError&gt;) -&gt; () in Artium_Agaora_Poc.ViewController.fetchChannelInfo(onSuccess: (Artium_Agaora_Poc.ChannelInfo) -&gt; ()) -&gt; ()"
+                  moduleName = "Artium Agaora Poc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suryavel_tr/Documents/Suryavel/Artium/POC/iOS/Artium%20Agaora%20Poc/Artium%20Agaora%20Poc/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64922A1D-D1C0-4BE7-8E1E-A25A0A1FD842"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Artium Agaora Poc/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
