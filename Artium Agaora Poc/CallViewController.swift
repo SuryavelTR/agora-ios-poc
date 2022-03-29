@@ -9,7 +9,7 @@ import UIKit
 import AgoraRtcKit
 import Alamofire
 
-class ViewController: UIViewController, AgoraRtcEngineDelegate {
+class CallViewController: BaseViewController, AgoraRtcEngineDelegate {
     
     @IBOutlet var remoteView:UIView!
     @IBOutlet var localView:UIView!
@@ -22,6 +22,8 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
     @IBOutlet var remoteMicIndicator:UIImageView!
     @IBOutlet var remoteCameraIndicator:UIImageView!
     
+    var channelInfo:ChannelInfo? = nil
+    
     var agoraKit: AgoraRtcEngineKit?
     
     override func viewDidLoad() {
@@ -33,11 +35,11 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         
         remoteCameraIndicator.tintColor = UIColor.green
         remoteMicIndicator.tintColor = UIColor.green
-        
-        //        initializeAndJoinChannel(appId: "f2b6d3398e0d42418815bee3b7974e5f", channelId: "artium_demo_ch", token: "006f2b6d3398e0d42418815bee3b7974e5fIAAsXz6DxcbVGMDDD1kmyLQflHNyE8zgAJsG+OiUGQhLHBEfIGgAAAAAEAAJmhJvr6JCYgEAAQCuokJi")
-        
-        fetchChannelInfo { channelInfo in
-            self.initializeAndJoinChannel(appId: channelInfo.appId, channelId: channelInfo.channelName, token: channelInfo.token)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let cInfo = channelInfo {
+            self.initializeAndJoinChannel(appId: cInfo.appId, channelId: cInfo.channelName, token: cInfo.token)
         }
     }
     
@@ -57,7 +59,7 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
     }
 }
 
-extension ViewController {
+extension CallViewController {
     
     @IBAction func onCallControll(view:UIView) {
         switch view {
@@ -89,7 +91,7 @@ extension ViewController {
     }
 }
 
-extension ViewController {
+extension CallViewController {
     private func initializeAndJoinChannel(appId:String, channelId:String, token:String) {
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId:appId , delegate: self)
         
@@ -121,19 +123,6 @@ extension ViewController {
         videoCanvas.view = remoteView
         agoraKit?.setupRemoteVideo(videoCanvas)
         view.bringSubviewToFront(localView)
-    }
-}
-
-extension ViewController {
-    
-    func fetchChannelInfo(onSuccess:@escaping (ChannelInfo)->Void) {
-        AF.request(
-            "https://a1d4068a-0222-49d7-bd1e-1699debeccca.mock.pstmn.io/api/v1/agora-poc/call-info",
-            method: .get).responseDecodable(of: ChannelInfo.self) { response in
-                if let channelInfo = response.value {
-                    onSuccess(channelInfo)
-                }
-            }
     }
 }
 

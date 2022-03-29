@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		927A4BF227F163C30082EBF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4BF127F163C30082EBF2 /* AppDelegate.swift */; };
 		927A4BF427F163C30082EBF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4BF327F163C30082EBF2 /* SceneDelegate.swift */; };
-		927A4BF627F163C30082EBF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4BF527F163C30082EBF2 /* ViewController.swift */; };
+		927A4BF627F163C30082EBF2 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4BF527F163C30082EBF2 /* CallViewController.swift */; };
 		927A4BF927F163C30082EBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A4BF727F163C30082EBF2 /* Main.storyboard */; };
 		927A4BFB27F163C50082EBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927A4BFA27F163C50082EBF2 /* Assets.xcassets */; };
 		927A4BFE27F163C50082EBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A4BFC27F163C50082EBF2 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,8 @@
 		927A4C2327F178950082EBF2 /* AgoraRtcKit in Frameworks */ = {isa = PBXBuildFile; productRef = 927A4C2227F178950082EBF2 /* AgoraRtcKit */; };
 		927A4C2627F18EB80082EBF2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 927A4C2527F18EB80082EBF2 /* Alamofire */; };
 		927A4C2E27F1B8C00082EBF2 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4C2D27F1B8C00082EBF2 /* ToggleButton.swift */; };
+		927A4C3027F2B94F0082EBF2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4C2F27F2B94F0082EBF2 /* BaseViewController.swift */; };
+		927A4C3227F2B9D00082EBF2 /* PreJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A4C3127F2B9D00082EBF2 /* PreJoinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 		927A4BEE27F163C30082EBF2 /* Artium Agaora Poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Artium Agaora Poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927A4BF127F163C30082EBF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		927A4BF327F163C30082EBF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		927A4BF527F163C30082EBF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		927A4BF527F163C30082EBF2 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		927A4BF827F163C30082EBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		927A4BFA27F163C50082EBF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		927A4BFD27F163C50082EBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		927A4C1227F163C50082EBF2 /* Artium_Agaora_PocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artium_Agaora_PocUITests.swift; sourceTree = "<group>"; };
 		927A4C1427F163C50082EBF2 /* Artium_Agaora_PocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artium_Agaora_PocUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		927A4C2D27F1B8C00082EBF2 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		927A4C2F27F2B94F0082EBF2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		927A4C3127F2B9D00082EBF2 /* PreJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreJoinViewController.swift; path = "Artium Agaora Poc/PreJoinViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +112,13 @@
 				927A4C2C27F1B8A40082EBF2 /* Views */,
 				927A4BF127F163C30082EBF2 /* AppDelegate.swift */,
 				927A4BF327F163C30082EBF2 /* SceneDelegate.swift */,
-				927A4BF527F163C30082EBF2 /* ViewController.swift */,
+				927A4BF527F163C30082EBF2 /* CallViewController.swift */,
+				927A4C3127F2B9D00082EBF2 /* PreJoinViewController.swift */,
 				927A4BF727F163C30082EBF2 /* Main.storyboard */,
 				927A4BFA27F163C50082EBF2 /* Assets.xcassets */,
 				927A4BFC27F163C50082EBF2 /* LaunchScreen.storyboard */,
 				927A4BFF27F163C50082EBF2 /* Info.plist */,
+				927A4C2F27F2B94F0082EBF2 /* BaseViewController.swift */,
 			);
 			path = "Artium Agaora Poc";
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927A4BF627F163C30082EBF2 /* ViewController.swift in Sources */,
+				927A4C3227F2B9D00082EBF2 /* PreJoinViewController.swift in Sources */,
+				927A4C3027F2B94F0082EBF2 /* BaseViewController.swift in Sources */,
+				927A4BF627F163C30082EBF2 /* CallViewController.swift in Sources */,
 				927A4BF227F163C30082EBF2 /* AppDelegate.swift in Sources */,
 				927A4BF427F163C30082EBF2 /* SceneDelegate.swift in Sources */,
 				927A4C2E27F1B8C00082EBF2 /* ToggleButton.swift in Sources */,

@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Call View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Artium_Agaora_Poc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="callViewController" id="BYZ-38-t0r" customClass="CallViewController" customModule="Artium_Agaora_Poc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaJ-8v-0Ye">
-                                <rect key="frame" x="0.0" y="88" width="414" height="711"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="755"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR4-S9-SCF">
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="484" y="872"/>
         </scene>
-        <!--View Controller-->
+        <!--Pre Join View Controller-->
         <scene sceneID="Uwd-5P-qR7">
             <objects>
-                <viewController id="Efs-aa-2mU" sceneMemberID="viewController">
+                <viewController id="Efs-aa-2mU" customClass="PreJoinViewController" customModule="Artium_Agaora_Poc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1t-yI-Rcg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,18 +153,28 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Join"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="XgK-N2-ld8"/>
+                                    <action selector="onJoinAction" destination="Efs-aa-2mU" eventType="touchUpInside" id="1Rl-6B-GVX"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-UA-9yd">
+                                <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
+                                <color key="color" red="0.44705885649999999" green="0.30196079609999998" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ed4-yL-6L2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nnn-UA-9yd" firstAttribute="centerX" secondItem="ed4-yL-6L2" secondAttribute="centerX" id="AEH-fC-So3"/>
                             <constraint firstItem="DZk-Id-kYf" firstAttribute="centerX" secondItem="ed4-yL-6L2" secondAttribute="centerX" id="Sxj-DX-i1Y"/>
                             <constraint firstItem="DZk-Id-kYf" firstAttribute="centerY" secondItem="ed4-yL-6L2" secondAttribute="centerY" id="dFr-v4-TnZ"/>
+                            <constraint firstItem="nnn-UA-9yd" firstAttribute="centerY" secondItem="ed4-yL-6L2" secondAttribute="centerY" id="e2m-Xh-UWW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Syh-JL-2hD"/>
+                    <connections>
+                        <outlet property="joinButton" destination="DZk-Id-kYf" id="Ioe-Ff-rco"/>
+                        <outlet property="progressIndicatorView" destination="nnn-UA-9yd" id="g1x-La-RYh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucB-w3-agY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
