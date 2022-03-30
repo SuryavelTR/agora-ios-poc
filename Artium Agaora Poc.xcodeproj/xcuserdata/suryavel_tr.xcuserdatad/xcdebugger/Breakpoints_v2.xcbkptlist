@@ -23,49 +23,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FF3EB6B3-A351-4399-A206-EFA8ECB14EA6"
+            uuid = "1E41EDD7-1668-40EE-9021-6A4D0BF17C8C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Artium Agaora Poc/CallViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "rtcEngine(_:didJoinedOfUid:elapsed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F42A239-F3C1-40BF-8998-6AEE8E6F218E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Artium Agaora Poc/CallViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "updateRemote(uid:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69A28684-CB9B-4DB5-AB89-EBBA3E8F60B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Artium Agaora Poc/CallViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FF3EB6B3-A351-4399-A206-EFA8ECB14EA6 - 93c35f436ad2629c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Artium_Agaora_Poc.CallViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Artium Agaora Poc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suryavel_tr/Documents/Suryavel/Artium/POC/iOS/Artium%20Agaora%20Poc/Artium%20Agaora%20Poc/CallViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "FF3EB6B3-A351-4399-A206-EFA8ECB14EA6 - 93c35f436ad2629c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Artium_Agaora_Poc.CallViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Artium Agaora Poc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suryavel_tr/Documents/Suryavel/Artium/POC/iOS/Artium%20Agaora%20Poc/Artium%20Agaora%20Poc/CallViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

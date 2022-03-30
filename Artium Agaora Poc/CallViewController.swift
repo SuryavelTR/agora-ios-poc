@@ -122,7 +122,6 @@ extension CallViewController {
         videoCanvas.renderMode = .hidden
         videoCanvas.view = remoteView
         agoraKit?.setupRemoteVideo(videoCanvas)
-        view.bringSubviewToFront(localView)
     }
 }
 
